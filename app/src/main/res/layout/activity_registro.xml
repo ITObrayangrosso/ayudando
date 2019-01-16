@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro"
+    android:background="@drawable/back_registro">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:padding="20dp"
+        style="@style/contenLogin">
+        <ImageView
+            android:id="@+id/logoLogin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+        <EditText
+            android:layout_below="@+id/logoLogin"
+            android:id="@+id/nombreRegistro"
+            style="@style/ImputTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre Completo"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:layout_below="@+id/nombreRegistro"
+            android:id="@+id/telefonoRegistro"
+            style="@style/ImputTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Telefono"
+            android:inputType="number" />
+        <EditText
+            android:layout_below="@+id/telefonoRegistro"
+            android:id="@+id/dateRegistro"
+            style="@style/ImputTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Fecha de nacimiento"
+            android:inputType="date" />
+        <EditText
+            android:layout_below="@+id/dateRegistro"
+            android:id="@+id/emailLogin"
+            style="@style/ImputTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/passwordRegistro"
+            style="@style/ImputTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/emailLogin"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/botonRegistrar"
+            style="@style/bottonBlue"
+            android:layout_below="@+id/passwordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Registrar"
+            android:layout_marginTop="20dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

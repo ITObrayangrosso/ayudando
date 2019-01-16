@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recuperar_contrasena"
+    android:background="@drawable/back_recuperarpass"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:padding="20dp"
+        style="@style/contenLogin">
+        <ImageView
+            android:id="@+id/logoLogin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/textoRecuperar"
+            android:layout_below="@+id/logoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_recuperar_contrasena"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_below="@+id/textoRecuperar"
+            android:id="@+id/emailRecuperar"
+            style="@style/ImputTextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo"
+            android:inputType="textEmailAddress" />
+        <Button
+            android:id="@+id/olvidoContraseña"
+            style="@style/bottonBlue"
+            android:layout_below="@+id/emailRecuperar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Recuperar Contraseña"
+            android:layout_marginTop="20dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+</RelativeLayout>
